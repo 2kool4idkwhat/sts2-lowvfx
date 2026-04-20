@@ -1,16 +1,26 @@
 # Low VFX mod
 
-This is a Slay the Spire 2 mod that disables some flashy visuals:
+This is a Slay the Spire 2 mod that disables some flashy visual effects:
 
-- generic attack slash
+- generic attack
 
 - some specific attacks:
 
-  - "big slash" - Perfected Strike, Sovereign Blade, ...
+  - "big slash" - Perfected Strike, Sovereign Blade, Mecha Knight, ...
 
-  - "large magic missile" - Bombardment, Meteor Strike, ... 
+  - "large magic missile" - Bombardment, Meteor Strike, ...
+
+  - "small magic missile" - Comet, Guiding Star, ...
+
+  - "scratch" - Claw, Maul, Rip and Tear, ...
+
+  - "gaseous impact" - a part of Bouncing Flask, Deadly Poison, ...
 
   - Sweeping Beam
+
+  - Minion Dive Bomb (known issue: the minion gets stuck on the player character)
+
+- the "cosmic swords/daggers" effect that appears above the Regent for a moment when playing an attack
 
 - card transformations
 
