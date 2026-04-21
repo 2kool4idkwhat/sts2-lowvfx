@@ -32,6 +32,9 @@ public static class Helper
             case "vfx/vfx_attack_lightning":
                 return false;
 
+            case "vfx/vfx_starry_impact":
+                return false;
+
             case "vfx/vfx_scratch":
                 return false;
 
@@ -78,6 +81,18 @@ public static class PlayFullScreenInCombatPatch
     public static bool Prefix(ref string path)
     {
         return Helper.CheckIfVfxPathAllowed(path);
+    }
+
+}
+
+// jungle maze adventure, dense vegetation
+[HarmonyPatch(typeof(VfxCmd), "PlayNonCombatVfx")]
+public static class PlayNonCombatVfxPatch
+{
+
+    public static bool Prefix()
+    {
+        return false;
     }
 
 }
