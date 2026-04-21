@@ -1,6 +1,7 @@
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
+using BaseLib.Config;
 
 namespace LowVFX;
 
@@ -13,6 +14,8 @@ public partial class MainFile : Node
 
     public static void Initialize()
     {
+        ModConfigRegistry.Register(ModId, new ModConfig());
+
         Harmony harmony = new(ModId);
 
         harmony.PatchAll();

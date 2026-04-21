@@ -9,7 +9,7 @@ public static class NCardTransformVfxPatch
 
     public static bool Prefix()
     {
-        return false;
+        return ModConfig.KeepCardTransformVfx;
     }
 
 }

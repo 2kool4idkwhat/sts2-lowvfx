@@ -32,7 +32,11 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="*" PrivateAssets="All"/>
         <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="All"/>
+        <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="*"/>
+        <PackageReference Include="BSchneppe.StS2.PckPacker" Version="0.1.1" PrivateAssets="All"/>
+        <AdditionalFiles Include="LowVFX/localization/**/*.json"/> <!-- Used by analyzer -->
     </ItemGroup>
 
     <ItemGroup>
@@ -50,6 +54,7 @@
         <None Condition="Exists('Directory.Build.props')" Include="Directory.Build.props"/>
         <None Include=".gitignore"/>
         <None Include="LowVFX.json"/>
+        <None Include="LowVFX/**"/>
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">
@@ -62,5 +67,11 @@
         <Message Text="Copying .dll and manifest to mods folder." Importance="high"/>
         <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/"/>
         <Copy SourceFiles="$(AssemblyName).json" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/"/>
+    </Target>
+
+    <Target Name="CopyQuickPck" AfterTargets="PackPck" Condition="Exists('$(PckPackerOutputPath)') And '$(PckPackerSkipped)' != 'true'">
+        <Message Text="Copying quick .pck to mods folder." Importance="high"/>
+        <Copy SourceFiles="$(PckPackerOutputPath)"
+              DestinationFolder="$(ModsPath)/$(MSBuildProjectName)"/>
     </Target>
 </Project>
