@@ -35,6 +35,9 @@ public static class Helper
             case "vfx/vfx_scratch":
                 return false;
 
+            case "vfx/vfx_dramatic_entrance_fullscreen":
+                return false;
+
             // NON-ATTACK VFX
 
             // devoted sculptor, terror eel, the insatiable, ceremonial beast
@@ -59,6 +62,17 @@ public static class PlayOnCreaturePatch
 
 [HarmonyPatch(typeof(VfxCmd), "PlayOnCreatureCenter")]
 public static class PlayOnCreatureCenterPatch
+{
+
+    public static bool Prefix(ref string path)
+    {
+        return Helper.CheckIfVfxPathAllowed(path);
+    }
+
+}
+
+[HarmonyPatch(typeof(VfxCmd), "PlayFullScreenInCombat")]
+public static class PlayFullScreenInCombatPatch
 {
 
     public static bool Prefix(ref string path)
