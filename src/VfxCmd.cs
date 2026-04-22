@@ -26,6 +26,9 @@ public static class Helper
             case "vfx/vfx_rock_shatter":
                 return false;
 
+            case "vfx/vfx_dagger_spray":
+                return false;
+
             case "vfx/vfx_flying_slash":
                 return false;
 
