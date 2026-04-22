@@ -13,3 +13,14 @@ public static class NBigSlashVfxPatch
     }
 
 }
+
+[HarmonyPatch(typeof(NBigSlashImpactVfx), "_Ready")]
+public static class NBigSlashImpactVfxPatch
+{
+
+    public static bool Prefix()
+    {
+        return false;
+    }
+
+}
