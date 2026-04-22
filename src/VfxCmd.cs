@@ -20,6 +20,12 @@ public static class Helper
             case "vfx/vfx_heavy_blunt":
                 return false;
 
+            case "vfx/vfx_bloody_impact":
+                return false;
+
+            case "vfx/vfx_rock_shatter":
+                return false;
+
             case "vfx/vfx_flying_slash":
                 return false;
 
