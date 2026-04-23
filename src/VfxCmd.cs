@@ -51,6 +51,9 @@ public static class Helper
             case "vfx/vfx_dramatic_entrance_fullscreen":
                 return false;
 
+            case "vfx/vfx_slime_impact":
+                return false;
+
             // NON-ATTACK VFX
 
             // devoted sculptor, terror eel, the insatiable, ceremonial beast
