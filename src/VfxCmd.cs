@@ -1,5 +1,6 @@
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Commands;
+using Godot;
 
 namespace LowVFX;
 
@@ -99,8 +100,23 @@ public static class PlayFullScreenInCombatPatch
 public static class PlayNonCombatVfxPatch
 {
 
-    public static bool Prefix()
+    public static bool Prefix(ref string path, ref Node2D? __result)
     {
+        // dense vegetation event uses the returned Node2D without checking for null
+        // so we can't disable the vfx that it uses or the game will crash. this also
+        // means we can't fully disable jungle maze adventure vfx (because it uses
+        // vfx/vfx_attack_slash too) :(
+        // TODO: look into replacing sprites as a solution to this
+        switch (path)
+        {
+            case "vfx/vfx_attack_slash":
+                return true;
+
+            case "vfx/events/dense_vegetation_slice_vfx":
+                return true;
+        }
+
+        __result = null;
         return false;
     }
 

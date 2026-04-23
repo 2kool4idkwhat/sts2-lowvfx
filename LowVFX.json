@@ -2,7 +2,7 @@
   "id": "LowVFX",
   "name": "Low VFX",
   "author": "2kool4idkwhat",
-  "description": "Disables some flashy visual effects",
+  "description": "Disables most flashy visual effects",
   "version": "v1.1.0",
   "has_pck": true,
   "has_dll": true,
