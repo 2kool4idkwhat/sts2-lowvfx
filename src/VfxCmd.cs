@@ -59,6 +59,10 @@ public static class Helper
             // devoted sculptor, terror eel, the insatiable, ceremonial beast
             case "vfx/vfx_scream":
                 return false;
+
+            // haunted ship, soul fysh
+            case "vfx/vfx_spooky_scream":
+                return false;
         }
 
         return true;
