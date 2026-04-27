@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace LowVFX;
 
 [HarmonyPatch(typeof(NRegentVfx), "Attack")]
-public static class NRegentVfxPatch
+public static class NRegentVfx_Patch
 {
 
     public static bool Prefix()

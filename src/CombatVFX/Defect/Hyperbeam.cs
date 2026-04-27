@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 namespace LowVFX;
 
 [HarmonyPatch(typeof(NHyperbeamVfx), "Create", new Type[] { typeof(Creature), typeof(Creature) })]
-public static class NHyperbeamVfxPatch
+public static class NHyperbeamVfx_Patch
 {
 
     public static bool Prefix(ref NHyperbeamVfx? __result)
@@ -17,7 +17,7 @@ public static class NHyperbeamVfxPatch
 }
 
 [HarmonyPatch(typeof(NHyperbeamImpactVfx), "Create", new Type[] { typeof(Creature), typeof(Creature) })]
-public static class NHyperbeamImpactVfxPatch
+public static class NHyperbeamImpactVfx_Patch
 {
 
     public static bool Prefix(ref NHyperbeamImpactVfx? __result)

@@ -70,7 +70,7 @@ public static class Helper
 }
 
 [HarmonyPatch(typeof(VfxCmd), "PlayOnCreature")]
-public static class PlayOnCreaturePatch
+public static class PlayOnCreature_Patch
 {
 
     public static bool Prefix(ref string path)
@@ -81,7 +81,7 @@ public static class PlayOnCreaturePatch
 }
 
 [HarmonyPatch(typeof(VfxCmd), "PlayOnCreatureCenter")]
-public static class PlayOnCreatureCenterPatch
+public static class PlayOnCreatureCenter_Patch
 {
 
     public static bool Prefix(ref string path)
@@ -92,7 +92,7 @@ public static class PlayOnCreatureCenterPatch
 }
 
 [HarmonyPatch(typeof(VfxCmd), "PlayFullScreenInCombat")]
-public static class PlayFullScreenInCombatPatch
+public static class PlayFullScreenInCombat_Patch
 {
 
     public static bool Prefix(ref string path)
@@ -104,7 +104,7 @@ public static class PlayFullScreenInCombatPatch
 
 // jungle maze adventure, dense vegetation
 [HarmonyPatch(typeof(VfxCmd), "PlayNonCombatVfx")]
-public static class PlayNonCombatVfxPatch
+public static class PlayNonCombatVfx_Patch
 {
 
     public static bool Prefix(ref string path, ref Node2D? __result)

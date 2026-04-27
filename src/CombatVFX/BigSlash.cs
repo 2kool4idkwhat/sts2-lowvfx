@@ -4,7 +4,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace LowVFX;
 
 [HarmonyPatch(typeof(NBigSlashVfx), "_Ready")]
-public static class NBigSlashVfxPatch
+public static class NBigSlashVfx_Patch
 {
 
     public static bool Prefix()
@@ -15,7 +15,7 @@ public static class NBigSlashVfxPatch
 }
 
 [HarmonyPatch(typeof(NBigSlashImpactVfx), "_Ready")]
-public static class NBigSlashImpactVfxPatch
+public static class NBigSlashImpactVfx_Patch
 {
 
     public static bool Prefix()

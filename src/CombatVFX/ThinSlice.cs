@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace LowVFX;
 
 [HarmonyPatch(typeof(NThinSliceVfx), "Create")]
-public static class NThinSliceVfxPatch
+public static class NThinSliceVfx_Patch
 {
 
     public static bool Prefix(ref NThinSliceVfx? __result)

@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace LowVFX;
 
 [HarmonyPatch(typeof(NLargeMagicMissileVfx), "_Ready")]
-public static class NLargeMagicMissileVfxPatch
+public static class NLargeMagicMissileVfx_Patch
 {
 
     public static bool Prefix()

@@ -17,7 +17,7 @@ public static class NMinionDiveBombVfx_Create_Patch
 }
 
 [HarmonyPatch(typeof(NMinionDiveBombVfx), "_Ready")]
-public static class NMinionDiveBombVfxPatch
+public static class NMinionDiveBombVfx_Patch
 {
 
     public static bool Prefix()
