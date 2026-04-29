@@ -1,5 +1,9 @@
 {
   "LOWVFX.mod_title": "Low VFX",
 
-  "LOWVFX-KEEP_CARD_TRANSFORM_VFX.title": "Keep the card transformation effect"
+  "LOWVFX-KEEP_CARD_TRANSFORM_VFX.title": "Keep the card transformation effect",
+
+  "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.title": "Keep the sandfalls in the Insatiable boss fight",
+  "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.title": "Keep the sandfalls in the Insatiable boss fight",
+  "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.desc": "Keep the \"falling streams of sand\" effect in the background of the Insatiable's boss fight."
 }
