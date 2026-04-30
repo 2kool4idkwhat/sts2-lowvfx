@@ -1,16 +1,22 @@
 # Low VFX mod
 
-This is a Slay the Spire 2 mod that disables some flashy visual effects:
+This is a Slay the Spire 2 mod that disables most flashy visual effects:
 
 - generic attacks
 
-- some specific attacks
+- most specific attacks
+
+- energy gain
 
 - the "cosmic swords/daggers" effect that appears above the Regent for a moment when playing an attack
 
 - card transformations
 
 - smithing at rest sites
+
+- the glow around uncommon/rare cards in card rewards
+
+- sandfalls in the Insatiable boss background
 
 Some of these effects can be re-enabled in the mod's settings in `Mod Configuration > Low VFX`
 
