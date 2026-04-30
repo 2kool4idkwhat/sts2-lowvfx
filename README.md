@@ -16,6 +16,8 @@ This is a Slay the Spire 2 mod that disables most flashy visual effects:
 
 - the glow around uncommon/rare cards in card rewards
 
+- Waterfall Giant's death explosion animation
+
 - sandfalls in the Insatiable boss background
 
 Some of these effects can be re-enabled in the mod's settings in `Mod Configuration > Low VFX`
