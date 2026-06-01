@@ -6,70 +6,42 @@ namespace LowVFX;
 
 public static class Helper
 {
-    public static bool CheckIfVfxPathAllowed(string vfxPath)
+    public static bool CheckIfVfxPathAllowed(string? vfxPath)
     {
         switch (vfxPath)
         {
+            case null:
+                return false;
+
             // ATTACK VFX
 
-            case "vfx/vfx_attack_slash":
-                return false;
+            case VfxCmd.slashPath:
+                return ModConfig.KeepSlashVfx;
 
-            case "vfx/vfx_attack_blunt":
-                return false;
+            case VfxCmd.bitePath:
+                return ModConfig.KeepBiteVfx;
 
-            case "vfx/vfx_heavy_blunt":
-                return false;
-
-            case "vfx/vfx_bloody_impact":
-                return false;
-
-            case "vfx/vfx_rock_shatter":
-                return false;
-
-            case "vfx/vfx_dagger_spray":
-                return false;
-
-            case "vfx/vfx_flying_slash":
-                return false;
-
-            case "vfx/vfx_dramatic_stab":
-                return false;
-
-            case "vfx/vfx_dagger_throw":
-                return false;
-
-            case "vfx/vfx_attack_lightning":
-                return false;
-
-            case "vfx/vfx_starry_impact":
-                return false;
-
-            case "vfx/vfx_scratch":
-                return false;
-
-            case "vfx/vfx_dramatic_entrance_fullscreen":
-                return false;
-
-            case "vfx/vfx_slime_impact":
-                return false;
+            case VfxCmd.scratchPath:
+                return ModConfig.KeepScratchVfx;
 
             // NON-ATTACK VFX
 
-            // devoted sculptor, terror eel, the insatiable, ceremonial beast
-            case "vfx/vfx_scream":
-                return false;
+            // block gain effect
+            case VfxCmd.blockPath:
+                return true;
 
-            // haunted ship, soul fysh
-            case "vfx/vfx_spooky_scream":
-                return false;
+            case VfxCmd.screamVfx:
+                return ModConfig.KeepScreamVfx;
+
+            case VfxCmd.spookyScreamVfx:
+                return ModConfig.KeepSpookyScreamVfx;
         }
 
-        return true;
+        return false;
     }
 }
 
-[HarmonyPatch(typeof(VfxCmd), "PlayOnCreature")]
+[HarmonyPatch(typeof(VfxCmd), nameof(VfxCmd.PlayOnCreature))]
 public static class PlayOnCreature_Patch
 {
     public static bool Prefix(ref string path)
@@ -78,7 +50,7 @@ public static class PlayOnCreature_Patch
     }
 }
 
-[HarmonyPatch(typeof(VfxCmd), "PlayOnCreatureCenter")]
+[HarmonyPatch(typeof(VfxCmd), nameof(VfxCmd.PlayOnCreatureCenter))]
 public static class PlayOnCreatureCenter_Patch
 {
     public static bool Prefix(ref string path)

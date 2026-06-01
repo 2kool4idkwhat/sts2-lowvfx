@@ -9,7 +9,8 @@ public static class WithHitFx_Patch
 {
     static void Prefix(ref string? vfx)
     {
-        vfx = null;
+        if (!Helper.CheckIfVfxPathAllowed(vfx))
+            vfx = null;
     }
 }
 
@@ -20,8 +21,6 @@ public static class WithAttackerAnim_Patch
     {
         // waterfall giant death explosion
         if (animName == "Erupt")
-        {
             animName = null;
-        }
     }
 }
