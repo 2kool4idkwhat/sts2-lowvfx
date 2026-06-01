@@ -6,10 +6,8 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NSweepingBeamVfx), "_Ready")]
 public static class NSweepingBeamVfx_Patch
 {
-
     public static bool Prefix()
     {
         return false;
     }
-
 }

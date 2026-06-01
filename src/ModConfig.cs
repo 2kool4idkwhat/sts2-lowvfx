@@ -8,4 +8,7 @@ internal class ModConfig : SimpleModConfig
 
     [ConfigHoverTip]
     public static bool KeepInsatiableBgSandfalls { get; set; } = false;
+
+    [ConfigSection("AttackVfx")]
+    public static bool KeepScratchVfx { get; set; } = false;
 }

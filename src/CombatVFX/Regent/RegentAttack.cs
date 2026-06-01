@@ -8,10 +8,8 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NRegentVfx), "Attack")]
 public static class NRegentVfx_Patch
 {
-
     public static bool Prefix()
     {
         return false;
     }
-
 }

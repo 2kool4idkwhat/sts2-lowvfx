@@ -1,8 +1,8 @@
 // "goopy impact" - gunk up, slimed, ...
 
+using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
-using Godot;
 
 namespace LowVFX;
 
@@ -13,11 +13,9 @@ namespace LowVFX;
 )]
 public static class NGoopyImpactVfx_Patch
 {
-
     public static bool Prefix(ref NGoopyImpactVfx? __result)
     {
         __result = null;
         return false;
     }
-
 }

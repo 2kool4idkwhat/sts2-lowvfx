@@ -10,10 +10,8 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NHeavyBluntVfx), nameof(NHeavyBluntVfx._Ready))]
 public static class NHeavyBluntVfx_Patch
 {
-
     public static bool Prefix()
     {
         return false;
     }
-
 }

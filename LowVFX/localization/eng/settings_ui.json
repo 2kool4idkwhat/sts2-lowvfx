@@ -5,5 +5,9 @@
 
   "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.title": "Keep the sandfalls in the Insatiable boss fight",
   "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.title": "Keep the sandfalls in the Insatiable boss fight",
-  "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.desc": "Keep the \"falling streams of sand\" effect in the background of the Insatiable's boss fight."
+  "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.desc": "Keep the \"falling streams of sand\" effect in the background of the Insatiable's boss fight.",
+
+  "LOWVFX-ATTACK_VFX.title": "Attack Effects",
+
+  "LOWVFX-KEEP_SCRATCH_VFX.title": "Keep the Scratch effect (used by Claw)"
 }

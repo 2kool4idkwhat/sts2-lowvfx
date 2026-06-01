@@ -8,10 +8,8 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NLargeMagicMissileVfx), "_Ready")]
 public static class NLargeMagicMissileVfx_Patch
 {
-
     public static bool Prefix()
     {
         return false;
     }
-
 }

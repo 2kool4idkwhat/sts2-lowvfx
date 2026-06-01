@@ -8,10 +8,8 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NEnergyCounter), "OnEnergyChanged")]
 public static class NEnergyCounter_Patch
 {
-
     public static bool Prefix()
     {
         return false;
     }
-
 }

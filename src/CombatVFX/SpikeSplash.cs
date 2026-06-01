@@ -8,11 +8,9 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NSpikeSplashVfx), "Create")]
 public static class NSpikeSplashVfx_Patch
 {
-
     public static bool Prefix(ref NSpikeSplashVfx? __result)
     {
         __result = null;
         return false;
     }
-
 }

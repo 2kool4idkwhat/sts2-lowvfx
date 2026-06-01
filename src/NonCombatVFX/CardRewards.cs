@@ -9,10 +9,8 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NCard), nameof(NCard.ActivateRewardScreenGlow))]
 public static class NCard_Patch
 {
-
     public static bool Prefix()
     {
         return false;
     }
-
 }

@@ -1,6 +1,6 @@
+using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
-using Godot;
 
 namespace LowVFX;
 
@@ -8,12 +8,13 @@ namespace LowVFX;
 [HarmonyPatch(typeof(NCombatBackground), nameof(NCombatBackground.Create))]
 public static class NCombatBackground_Sandfalls_Patch
 {
-
     public static void Postfix(NCombatBackground __result)
     {
-        if (ModConfig.KeepInsatiableBgSandfalls) return;
+        if (ModConfig.KeepInsatiableBgSandfalls)
+            return;
 
-        if (!__result.SceneFilePath.Contains("the_insatiable_boss")) return;
+        if (!__result.SceneFilePath.Contains("the_insatiable_boss"))
+            return;
 
         MainFile.Logger.Info("Disabling sandfalls");
 
@@ -30,5 +31,4 @@ public static class NCombatBackground_Sandfalls_Patch
             sandfall.ProcessMode = Node.ProcessModeEnum.Disabled;
         }
     }
-
 }

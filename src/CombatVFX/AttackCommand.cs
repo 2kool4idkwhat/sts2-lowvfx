@@ -7,18 +7,15 @@ namespace LowVFX;
 [HarmonyPatch(typeof(AttackCommand), "WithHitFx")]
 public static class WithHitFx_Patch
 {
-
     static void Prefix(ref string? vfx)
     {
         vfx = null;
     }
-
 }
 
 [HarmonyPatch(typeof(AttackCommand), "WithAttackerAnim")]
 public static class WithAttackerAnim_Patch
 {
-
     static void Prefix(ref string? animName)
     {
         // waterfall giant death explosion
@@ -27,5 +24,4 @@ public static class WithAttackerAnim_Patch
             animName = null;
         }
     }
-
 }

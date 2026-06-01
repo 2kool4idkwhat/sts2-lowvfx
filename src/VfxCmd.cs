@@ -1,6 +1,6 @@
+using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Commands;
-using Godot;
 
 namespace LowVFX;
 
@@ -72,41 +72,34 @@ public static class Helper
 [HarmonyPatch(typeof(VfxCmd), "PlayOnCreature")]
 public static class PlayOnCreature_Patch
 {
-
     public static bool Prefix(ref string path)
     {
         return Helper.CheckIfVfxPathAllowed(path);
     }
-
 }
 
 [HarmonyPatch(typeof(VfxCmd), "PlayOnCreatureCenter")]
 public static class PlayOnCreatureCenter_Patch
 {
-
     public static bool Prefix(ref string path)
     {
         return Helper.CheckIfVfxPathAllowed(path);
     }
-
 }
 
 [HarmonyPatch(typeof(VfxCmd), "PlayFullScreenInCombat")]
 public static class PlayFullScreenInCombat_Patch
 {
-
     public static bool Prefix(ref string path)
     {
         return Helper.CheckIfVfxPathAllowed(path);
     }
-
 }
 
 // jungle maze adventure, dense vegetation
 [HarmonyPatch(typeof(VfxCmd), "PlayNonCombatVfx")]
 public static class PlayNonCombatVfx_Patch
 {
-
     public static bool Prefix(ref string path, ref Node2D? __result)
     {
         // dense vegetation event uses the returned Node2D without checking for null
@@ -126,5 +119,4 @@ public static class PlayNonCombatVfx_Patch
         __result = null;
         return false;
     }
-
 }
