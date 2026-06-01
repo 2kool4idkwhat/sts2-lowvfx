@@ -32,4 +32,4 @@ Download `LowVFX.zip` from the latest release and extract it in your mods folder
 
 This mod depends on [BaseLib](https://github.com/Alchyr/BaseLib-StS2), so you'll need to install that too if you haven't already
 
-To build from source, install .NET 9 SDK, then run `dotnet build`. This should also automatically install the mod
+To build from source, install .NET SDK, then run `just build`. This should also automatically install the mod
