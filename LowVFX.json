@@ -9,9 +9,9 @@
   "dependencies": [
     {
       "id": "BaseLib",
-      "minVersion": "3.1.2"
+      "minVersion": "3.2.0"
     }
   ],
-  "min_game_version": "v0.105.0",
+  "min_game_version": "v0.107.0",
   "affects_gameplay": false
 }

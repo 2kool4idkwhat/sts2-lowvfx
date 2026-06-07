@@ -2,6 +2,9 @@
   "LOWVFX.mod_title": "Low VFX",
 
   "LOWVFX-KEEP_CARD_TRANSFORM_VFX.title": "Keep the card transformation effect",
+  "LOWVFX-NO_RECOLOR_CARD_TRANSFORM_VFX.title": "Don't change the colors of the card transformation effect",
+
+  "LOWVFX-KEEP_PARTICLES_VFX.title": "Keep particle effects",
 
   "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.title": "Keep the sandfalls in the Insatiable boss fight",
   "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.title": "Keep the sandfalls in the Insatiable boss fight",

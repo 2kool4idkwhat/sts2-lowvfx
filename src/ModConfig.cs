@@ -6,6 +6,10 @@ internal class ModConfig : SimpleModConfig
 {
     public static bool KeepCardTransformVfx { get; set; } = false;
 
+    public static bool NoRecolorCardTransformVfx { get; set; } = false;
+
+    public static bool KeepParticlesVfx { get; set; } = false;
+
     [ConfigHoverTip]
     public static bool KeepInsatiableBgSandfalls { get; set; } = false;
 
