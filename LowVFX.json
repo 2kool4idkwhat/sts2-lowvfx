@@ -9,7 +9,7 @@
   "dependencies": [
     {
       "id": "BaseLib",
-      "minVersion": "3.2.0"
+      "minVersion": "3.2.1"
     }
   ],
   "min_game_version": "v0.107.0",

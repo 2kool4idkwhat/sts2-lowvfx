@@ -1,5 +1,8 @@
 build:
-    DOTNET_ROLL_FORWARD=LatestMajor dotnet build
+    dotnet build
+
+publish:
+    dotnet build -c publish
 
 fmt:
     csharpier format .

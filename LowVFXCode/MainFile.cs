@@ -1,3 +1,4 @@
+using System.Reflection;
 using BaseLib.Config;
 using Godot;
 using HarmonyLib;
@@ -20,5 +21,8 @@ public partial class MainFile : Node
         Harmony harmony = new(ModId);
 
         harmony.PatchAll();
+
+        var assembly = Assembly.GetExecutingAssembly();
+        Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(assembly);
     }
 }
