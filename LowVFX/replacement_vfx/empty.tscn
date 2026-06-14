@@ -1,3 +1,3 @@
-[gd_scene load_steps=6 format=3 uid="uid://dlo4ynkvta3jd"]
+[gd_scene format=3 uid="uid://dlo4ynkvta3jd"]
 
-[node name="VfxAttackSlash" type="Sprite2D"]
+[node name="Empty" type="Sprite2D"]
