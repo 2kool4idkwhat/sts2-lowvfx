@@ -12,3 +12,12 @@ public static class NKinPriestGrenadeVfx_Patch
         return false;
     }
 }
+
+[HarmonyPatch(typeof(NKinPriestBeamVfx), nameof(NKinPriestBeamVfx.Fire))]
+public static class NKinPriestBeamVfx_Patch
+{
+    public static bool Prefix()
+    {
+        return false;
+    }
+}
