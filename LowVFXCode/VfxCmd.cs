@@ -15,14 +15,14 @@ public static class Helper
 
             // ATTACK VFX
 
-            case VfxCmd.slashPath:
-                return ModConfig.KeepSlashVfx;
+            // case VfxCmd.slashPath:
+            //     return ModConfig.KeepSlashVfx;
 
-            case VfxCmd.bitePath:
-                return ModConfig.KeepBiteVfx;
+            // case VfxCmd.bitePath:
+            //     return ModConfig.KeepBiteVfx;
 
-            case VfxCmd.scratchPath:
-                return ModConfig.KeepScratchVfx;
+            // case VfxCmd.scratchPath:
+            //     return ModConfig.KeepScratchVfx;
 
             // NON-ATTACK VFX
 

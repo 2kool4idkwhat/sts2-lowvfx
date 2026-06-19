@@ -14,8 +14,8 @@ public static class SceneHelper_Patch
         switch (innerPath)
         {
             case VfxCmd.slashPath:
-                if (ModConfig.KeepSlashVfx)
-                    return true;
+                // if (ModConfig.KeepSlashVfx)
+                //     return true;
 
                 __result = emptyReplacementPath;
                 return false;

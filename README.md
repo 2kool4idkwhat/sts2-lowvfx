@@ -2,15 +2,13 @@
 
 This is a Slay the Spire 2 mod that disables most flashy visual effects:
 
-- generic attacks
-
-- most specific attacks
+- most attacks
 
 - energy gain
 
 - the "cosmic swords/daggers" effect that appears above the Regent for a moment when playing an attack
 
-- card transformations
+- makes the card transformation effect less flashy
 
 - smithing at rest sites
 
@@ -32,4 +30,4 @@ Download `LowVFX.zip` from the latest release and extract it in your mods folder
 
 This mod depends on [BaseLib](https://github.com/Alchyr/BaseLib-StS2), so you'll need to install that too if you haven't already
 
-To build from source, install .NET SDK, then run `just build`. This should also automatically install the mod
+To build from source, install .NET SDK, then run `just publish`. This should also automatically install the mod

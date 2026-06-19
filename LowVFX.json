@@ -3,14 +3,11 @@
   "name": "Low VFX",
   "author": "2kool4idkwhat",
   "description": "Disables most flashy visual effects",
-  "version": "v1.4.0",
+  "version": "v1.5.0",
   "has_pck": true,
   "has_dll": true,
   "dependencies": [
-    {
-      "id": "BaseLib",
-      "minVersion": "3.2.1"
-    }
+    { "id": "BaseLib", "minVersion": "3.2.1" }
   ],
   "min_game_version": "v0.107.0",
   "affects_gameplay": false

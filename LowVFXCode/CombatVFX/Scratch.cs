@@ -11,12 +11,7 @@ public static class NScratchVfx_Patch
 {
     public static bool Prefix(ref NScratchVfx? __result)
     {
-        if (!ModConfig.KeepScratchVfx)
-        {
-            __result = null;
-            return false;
-        }
-
-        return true;
+        __result = null;
+        return false;
     }
 }

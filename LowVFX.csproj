@@ -81,6 +81,12 @@
     />
   </Target>
 
+  <Target Name="CopyToWorkshopUploadDirOnBuild" AfterTargets="PostBuildEvent">
+    <Message Text="Copying .dll and manifest to the workshop upload dir." Importance="high" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="./workshop/content/" />
+    <Copy SourceFiles="$(AssemblyName).json" DestinationFolder="./workshop/content/" />
+  </Target>
+
   <Target Name="NeedGodotForPublish" BeforeTargets="GodotPublish">
     <Error
       Text=" Godot path must be set up before publishing; Godot not found at path '$(GodotPath)'. Check Directory.Build.props file."
@@ -104,6 +110,12 @@
       Command="&quot;$(GodotPath)&quot; --headless --export-pack &quot;BasicExport&quot; &quot;$(ModsPath)$(MSBuildProjectName)/$(MSBuildProjectName).pck&quot;"
       EnvironmentVariables="IsInnerGodotExport=true;MSBUILDDISABLENODEREUSE=1"
       ContinueOnError="WarnAndContinue"
+    />
+
+    <Message Text="Copying .pck to the workshop upload dir" Importance="high" />
+    <Copy
+      SourceFiles="$(ModsPath)$(MSBuildProjectName)/$(MSBuildProjectName).pck"
+      DestinationFolder="./workshop/content/"
     />
   </Target>
 </Project>

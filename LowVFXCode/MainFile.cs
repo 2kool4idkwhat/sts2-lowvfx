@@ -19,10 +19,9 @@ public partial class MainFile : Node
         ModConfigRegistry.Register(ModId, new ModConfig());
 
         Harmony harmony = new(ModId);
-
         harmony.PatchAll();
 
-        var assembly = Assembly.GetExecutingAssembly();
-        Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(assembly);
+        // var assembly = Assembly.GetExecutingAssembly();
+        // Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(assembly);
     }
 }

@@ -4,23 +4,11 @@
   "LOWVFX-KEEP_CARD_TRANSFORM_VFX.title": "Keep the card transformation effect",
   "LOWVFX-NO_RECOLOR_CARD_TRANSFORM_VFX.title": "Don't change the colors of the card transformation effect",
 
-  "LOWVFX-KEEP_PARTICLES_VFX.title": "Keep particle effects",
-
   "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.title": "Keep the sandfalls in the Insatiable boss fight",
   "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.title": "Keep the sandfalls in the Insatiable boss fight",
   "LOWVFX-KEEP_INSATIABLE_BG_SANDFALLS.hover.desc": "Keep the \"falling streams of sand\" effect in the background of the Insatiable's boss fight.",
 
   "LOWVFX-ATTACK_VFX.title": "Attack Effects",
-
-  "LOWVFX-KEEP_SLASH_VFX.title": "Keep the Slash effect",
-
-  "LOWVFX-KEEP_BITE_VFX.title": "Keep the Bite effect",
-  "LOWVFX-KEEP_BITE_VFX.hover.title": "Keep the Bite effect",
-  "LOWVFX-KEEP_BITE_VFX.hover.desc": "Keep the Bite effect that's used by Snakebite, Feed.",
-
-  "LOWVFX-KEEP_SCRATCH_VFX.title": "Keep the Scratch effect",
-  "LOWVFX-KEEP_SCRATCH_VFX.hover.title": "Keep the Scratch effect",
-  "LOWVFX-KEEP_SCRATCH_VFX.hover.desc": "Keep the Scratch effect that's used by Claw, Maul, Rip and Tear.",
 
   "LOWVFX-KEEP_SCREAM_VFX.title": "Keep the Scream effect",
   "LOWVFX-KEEP_SCREAM_VFX.hover.title": "Keep the Scream effect",
