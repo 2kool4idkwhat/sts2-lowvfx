@@ -22,12 +22,6 @@ Some of these effects can be re-enabled in the mod's settings in `Mod Configurat
 
 ## Installing
 
-Download `LowVFX.zip` from the latest release and extract it in your mods folder:
-
-- Linux: `~/.local/share/Steam/steamapps/common/Slay the Spire 2/mods`
-
-- Windows: `C:/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/mods/`
-
-This mod depends on [BaseLib](https://github.com/Alchyr/BaseLib-StS2), so you'll need to install that too if you haven't already
+You can get the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3748028799)
 
 To build from source, install .NET SDK, then run `just publish`. This should also automatically install the mod
